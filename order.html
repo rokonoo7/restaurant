@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <div class=" reserve">
+              <a href=""> Make a reserevation</a>
+            </div>
+           
+          </div>
+        </div>
+      </nav>
+      <main>
+        <section class="item-order p-2">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="food-item-img">
+                <img src="p1.jpg" alt="">
+              </div>
+              <div>
+                <h2>Food Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi assumenda maxime molestiae a voluptates animi quas et, in, non quidem cupiditate, harum architecto tempora veritatis error reprehenderit quia blanditiis?</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <h1>Steak</h1>
+              <h5> Price: <span>12$</span></h5>
+              <div class="type m-2">
+                <h4>Food type</h4>
+                <div class="d-flex " style="gap: 1rem;">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Default
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      large <span>(+4$)</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="extra-topping m-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Extra topping<span>(+0.40$)</span>
+                  </label>
+                </div>
+              </div>
+              <div class="extra-request m-3">
+                <h4>Extra request</h4>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Extra request</label>
+                </div>
+              </div>
+              <div class="price p-4">
+                <div class=" total bg-primary">
+                   <h3>Product total: <span>$</span></h3>
+                   
+                </div>
+                <div class=" total bg-primary">
+                  <h3>Extra total: <span>$</span></h3>
+                  
+               </div>
+              
+                <div class=" total bg-primary">
+                  <h3>Grand total: <span>$</span></h3>
+                  <div class="food-item">
+                    <span>Food Item </span>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity(1)"><</button>
+                        <input type="number" id="quantity1" value="0">
+                        <button onclick="increaseQuantity(1)">></button>
+                    </div>
+                </div>
+               </div>
+               <div>
+                <button type="button" class="btn btn-warning border-0">ADD TO CART</button>
+               </div>
+               <div>
+
+               </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+  
+    <script src="order.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.food-item-img{
+    height: 20rem;
+}
+.food-item-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.food-item span{
+    font-size: 1.5rem;
+}
+#quantity1{
+   width: 2rem;
+}
