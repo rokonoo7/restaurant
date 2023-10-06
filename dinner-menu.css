@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu-card-container{
+    display: flex;
+    gap: 4px;
+    padding: 2px;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.menu-img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.menu-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.menu-price{
+    background-color: blanchedalmond;
+    width: 6rem;
+    border-radius: 5px;
+    
+}
+.menu-des{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 4px;
+}

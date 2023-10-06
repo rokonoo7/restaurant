@@ -8,9 +8,9 @@ html{
 }
 body{
    
-    background-color: rgb(23, 22, 22) ;
+    /* background-color: rgb(23, 22, 22) ; */
     overflow-x: hidden;
-    color: white ;
+    /* color: white ; */
 }
 
 @media (min-width: 1024px) {
